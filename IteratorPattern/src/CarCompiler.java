@@ -18,8 +18,8 @@ public class CarCompiler {
 	
 	public void showCars() {
 		
-		Iterator NapervilleCars = iterNapervilleCars.createIterator();
-		Iterator SchaumburgCars = iterSchaumburgCars.createIterator();
+		Iterator<?> NapervilleCars = iterNapervilleCars.createIterator();
+		Iterator<?> SchaumburgCars = iterSchaumburgCars.createIterator();
 		
 		System.out.println("Carmax of Naperville cars: \n");
 		printTheCars(NapervilleCars);
@@ -29,7 +29,7 @@ public class CarCompiler {
 		
 	}
 	
-	public void printTheCars(Iterator iterator) {
+	public void printTheCars(Iterator<?> iterator) {
 		
 		while(iterator.hasNext()) {
 			

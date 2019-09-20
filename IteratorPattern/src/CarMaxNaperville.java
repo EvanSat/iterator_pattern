@@ -22,8 +22,7 @@ public class CarMaxNaperville implements CarInfoIterator{
 	}
 
 
-	@Override
-	public Iterator createIterator() {
+	public Iterator<CarInfo> createIterator() {
 		
 		return availableCars.iterator();
 	}

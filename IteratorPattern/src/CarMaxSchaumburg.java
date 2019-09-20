@@ -25,8 +25,7 @@ public class CarMaxSchaumburg implements CarInfoIterator{
 		
 	}
 	
-	@Override
-	public Iterator createIterator() {
+	public Iterator<CarInfo> createIterator() {
 		
 		return Arrays.asList(availableCars).iterator();
 	}
